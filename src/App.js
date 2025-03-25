@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useSelector } from "react-redux";
+import TaskList from "./components/TaskList";
+import TaskInput from "./components/TaskInput";
+import Login from "./Login";
 
-function App() {
+const App = () => {
+  const isAuthenticated = useSelector((state) => state.tasks.isAuthenticated);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-4">
+      {isAuthenticated ? <div>
+        <h2 className="text-center">To-Do Application</h2>
+        <TaskInput />
+        <TaskList />
+      </div> : <Login />}
     </div>
   );
-}
+};
 
 export default App;
