@@ -18,27 +18,27 @@ A simple and efficient task management application built with **React, Redux, an
 ### 🏠 Login Page  
 The Login Page provides a secure way for users to access their tasks.
 
-![Login Page](./images/01.png)
+![Login Page](public/images/01.PNG)
 
 
 ### 🏠 Home Page  
 Here, users can see the list of tasks sorted by priority and real-time weather updates.  
 
-![Home Page](./images/03.png)
+![Home Page](public/images/03.PNG)
 
 ---
 
 ### ➕ Adding a Task  
 Users can add tasks with different priority levels.  
 
-![Add Task](./images/04.png)
+![Add Task](public/images/04.PNG)
 
 ---
 
 ### ❌ list of Task  with delete
 Users can delete a task by clicking the **Delete** button.  
 
-![Delete Task](./images/05.png)
+![Delete Task](public/images/05.PNG)
 
 ---
 
